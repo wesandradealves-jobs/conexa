@@ -1,0 +1,37 @@
+.watcher 
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 9999
+	padding: 10px
+	text-align: center
+	color: white
+	&.warning
+		background: #ED4055
+	&.active
+		background: mediumseagreen
+	font-size: .9rem
+	display: flex 
+	flex-flow: row wrap 
+	align-items: center
+	transition: 500ms linear all
+	cursor: pointer
+	& + header 
+		.navbar.fixed-top
+			transition: 500ms linear all
+			top: 50px
+	p 
+		font-weight: bold
+		text-align: left
+		margin: 0
+		padding-left: 10px
+		line-height: 1.1
+		color: white
+		small 
+			display: block 
+			font-size: 80%
+			font-weight: 300
+	img 
+		height: 30px 
+		filter: invert(1)

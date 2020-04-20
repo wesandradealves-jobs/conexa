@@ -1,0 +1,23 @@
+.busca-nome
+	.img-doctor,
+	p
+		float: none
+	.img-doctor
+		height: auto 
+		max-width: 44px
+		align-self: stretch
+.box
+	&.atendimento 
+		.row
+			display: flex 
+			flex-flow: row wrap
+			align-items: center 
+			[class*="col-"]
+				flex: 1 
+				display: inherit 
+				flex-flow: inherit 
+				align-items: inherit
+				width: auto
+				max-width: initial
+				&:last-child 
+					flex: 0 0 auto 

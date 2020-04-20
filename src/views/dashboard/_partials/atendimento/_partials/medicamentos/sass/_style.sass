@@ -1,0 +1,49 @@
+.custom-select, .autocomplete 
+  -webkit-box-flex: 0
+  display: flex
+  align-items: center
+  border: 2px solid #3cb4e7
+  background-color: #fff
+  border-radius: 8px
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.12)
+  height: 44px
+  font-weight: 800  
+  color: #3cb4e7
+  padding: 0 15px
+  .autocomplete__box,
+  .form-control
+    padding: 0
+    display: block
+    background: initial
+    border: 0
+    box-shadow: none!important
+.autocomplete 
+  .autocomplete__results
+    left: -2px
+    border-radius: 0 0 8px 8px
+    border: 2px #3cb4e7 solid
+    border-top: 0
+    width: calc(100% + 4px)
+    top: calc(100% - 4px)  
+  .autocomplete__box
+    display: flex
+    flex-flow: row wrap 
+    justify-content: space-between 
+    align-items: center
+    width: 100%
+  .autocomplete__inputs
+    flex: 1
+    padding-left: 10px
+  img 
+    flex: 0 0 auto
+
+.ctrl-counter-num
+  position: relative
+  top: 0
+
+.autocomplete__icon
+  line-height: 14px
+
+.medicamento .search-container .form-control
+  height: auto
+  margin: 0  

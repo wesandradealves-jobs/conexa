@@ -1,0 +1,79 @@
+body, html
+	min-height: 100vh
+	height: auto
+	&.md-theme-default
+		background-color: initial
+
+.vertical-align 
+  footer
+    margin-top: 0
+
+@keyframes opacity 
+  0% 
+    opacity: 0
+    overflow: hidden
+  100% 
+    opacity: 1
+    overflow: initial
+
+.fade-enter-active,
+.fade-leave-active 
+  transition-duration: 0.3s
+  transition-property: opacity
+  transition-timing-function: ease
+.fade-enter,
+.fade-leave-active 
+  opacity: 0 		
+
+.wrap 
+  overflow: hidden
+
+.search-container 
+  &, .form-control
+    transform: initial!important
+
+.navbar.fixed-top.desktop
+  z-index: 999
+
+[disabled]
+  opacity: .3!important
+  pointer-events: none
+
+.navbar-collapse .ml-auto 
+  align-items: center
+  display: flex
+  flex-flow: row wrap
+  justify-content: space-between 
+.desktop.navbar-expand-md .navbar-nav .nav-link
+  line-height: .9
+  padding: 5px 0
+.navbar-expand-md .navbar-nav
+  flex: 1
+  justify-content: flex-end
+.navbar-expand-md>.container, 
+.navbar-expand-md>.container-fluid    
+  padding-top: 6px
+  padding-bottom: 6px
+.custom-radio
+  position: relative 
+  overflow: hidden
+  input
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    z-index: 2
+    cursor: pointer
+    opacity: 0
+  label 
+    z-index: 1
+    position: relative 
+.active[data-toggle="collapse"] 
+  color: white !important
+  text-decoration: none !important
+  background: #ef4056!important
+.submenu-mobile .card-link[aria-expanded="true"]
+  background-color: transparent 
+  color: #448aff
+

@@ -1,0 +1,28 @@
+.list-hospital
+	>li 
+		display: block 
+		&:hover 
+			a:not(.md-button) 
+				color: white
+				text-decoration: none
+		>a 
+			display: flex
+			flex-flow: row
+			justify-content: space-between
+			align-items: center
+			span 
+				visibility: visible
+			.urlFoto
+				border-radius: 9999px
+				background-size: cover 
+				background-position: center center 
+				background-repeat: no-repeat 
+				height: 45px
+				width: 45px 
+				flex: 0 0 auto 
+				margin-right: 15px
+				border: 2px dodgerblue solid
+				& + span 
+					flex: 1
+					small 
+						font-weight: bold
